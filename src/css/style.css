@@ -1,0 +1,115 @@
+:root {
+    --bg-color: hsl(233, 47%, 7%);
+    --card-bg-color: hsl(244, 38%, 16%);
+    --img-color:hsl(277, 64%, 61%);
+    --white-color:hsl(0, 0%, 100%);
+    --paragraph-color: hsla(0, 0%, 100%, 0.75);
+    --stats-color: hsla(0, 0%, 100%, 0.6);
+    
+    --standart-font: 15px;
+
+    --font-option-1: 'Inter', sans-serif;
+    --font-option-2: 'Lexend Deca', sans-serif;
+}
+
+body {
+    font-family: var(--font-option-1);
+    font-size: var(--standart-font);
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: var(--card-bg-color);
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    border-radius: 5px;
+}
+
+.container .info {
+    padding: 40px;
+    color: var(--white-color);
+}
+
+.container .info h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.container .info span {
+    color: var(--img-color);
+}
+
+.container .info p {
+    color: var(--paragraph-color);
+    margin-bottom: 20px;
+    max-width: 85%;
+    font-size: 2rem;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+.container .resultados {
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 60px;
+    justify-content: space-between;
+}
+
+.container .resultados strong {
+    font-size: 3rem;
+}
+
+.container .resultados p {
+    color: var(--stats-color);
+}
+
+.container .imagem {
+    width: 100%;
+    object-fit: cover;
+    background-color: aliceblue;
+    position: relative;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+.container .imagem img {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: relative;
+}
+
+.container .imagem:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(277, 64%, 61%, 0.541);
+    position: absolute;
+    top: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.attribution {
+    color: var(--white-color);
+    margin-top: 10px;
+}
+
+.attribution a {
+    color: var(--img-color);
+}
+
+.attribution a:hover {
+    text-decoration: underline;
+}
