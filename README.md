@@ -14,6 +14,7 @@ Users should be able to:
 
 ### Links
 
+[Solution URL](https://wagner-goulart.github.io/stats-preview-card-component-main/)
 
 ### Built with
 
